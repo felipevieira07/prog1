@@ -2,12 +2,12 @@ body{
     font-family: Arial, sans-serif;
     margin:0;
     padding:0;
-    background-color: white;
+    background-color: #f4f4f4;
     text-align: center ;
 
 }
 header{
-    background: blue;
+    background: rgb(44, 44, 129);
     color: white;
     padding: 15px 0; /* espaçamento interno 15px acima e abaixo, e 0px esquerda á direita */
     font-size:24px;
@@ -15,7 +15,7 @@ header{
 }
 
 nav {
-    background-color: rgb(19, 128, 179);
+    background-color: rgb(13, 73, 100);
     padding: 10px;
     display: flex;/*Flex Boxing*/
     /*alinhamento na horinzontal - espaça entre os links*/
@@ -33,7 +33,31 @@ nav a{
     text-decoration: none;/*não faz decoração no link*/
     padding: 10px 15px;/*10px é acima e abaixo 15px é esq e dir*/
     font-size: 18px;/*18px de tamanho da fonte*/
-    background: green;/*cor de fundo*/
+    background: rgb(0, 23, 128);/*cor de fundo*/
     border-radius: 5px;/*borda com canto arredondado*/
 
+}
+nav a:hover {
+    background:rgb(62, 19, 179)
+}
+img{
+    width: 120px;
+    height: auto;
+    margin-right: 20px;/*espaçamento externo à direita de 20px*/
+    border-radius: 10px;
+
+}
+
+.container{
+    width: 80%;
+    /* 20px em cima e em baixo e automático esquerda e direirta*/
+    margin: 20px auto;
+    background: white;
+     /*espaçamento interno é nos 4 lados*/
+    padding: 20px;
+    border-radius: 10%;
+    text-align: justify;
+}
+h2{
+    text-align: center;
 }
