@@ -1,0 +1,39 @@
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    background-color: white;
+    text-align: center ;
+
+}
+header{
+    background: blue;
+    color: white;
+    padding: 15px 0; /* espaçamento interno 15px acima e abaixo, e 0px esquerda á direita */
+    font-size:24px;
+
+}
+
+nav {
+    background-color: rgb(19, 128, 179);
+    padding: 10px;
+    display: flex;/*Flex Boxing*/
+    /*alinhamento na horinzontal - espaça entre os links*/
+    justify-content: space-between;
+    /*alinhamento na vertical*/
+    align-items: center;
+}
+#links-menu{
+    display:flex;
+    gap:15px;
+}
+/* configura o estilo das âncoras que estão dentro do nav*/
+nav a{
+    color:white;/*texto branco*/
+    text-decoration: none;/*não faz decoração no link*/
+    padding: 10px 15px;/*10px é acima e abaixo 15px é esq e dir*/
+    font-size: 18px;/*18px de tamanho da fonte*/
+    background: green;/*cor de fundo*/
+    border-radius: 5px;/*borda com canto arredondado*/
+
+}
