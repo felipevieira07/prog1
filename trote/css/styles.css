@@ -58,6 +58,43 @@ img{
     border-radius: 10%;
     text-align: justify;
 }
+
 h2{
     text-align: center;
 }
+
+table tr td{
+    padding: 20px ;
+}
+
+table{
+    /*esp. externo de 0 acima e abaixo e automático esq. dir.*/
+    margin: 0 auto; 
+}
+
+.laranja{
+    background-color:orange ;
+}
+
+.azul{
+    background-color:blue ;
+    color: white;
+}
+
+.preta{
+    background-color: black;
+    color: white;
+}
+
+.roxo{
+    background-color: purple;
+}
+
+.verde{
+    background-color: green;
+}
+
+.vermelha{
+    background-color: red;
+}
+
