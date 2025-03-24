@@ -2,7 +2,7 @@ body{
     font-family: Arial, sans-serif;
     margin:0;
     padding:0;
-    background-color: #f4f4f4;
+    background-color: #c0a6a670;
     text-align: center ;
 
 }
@@ -97,4 +97,10 @@ table{
 .vermelha{
     background-color: red;
 }
+
+.campos{
+    padding: 20px;
+}
+
+
 
