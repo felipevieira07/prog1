@@ -30,16 +30,36 @@
             <h2> Calculadoras </h2>
             <form><!--formulário para entrada de dados do usuário-->
                 <div class="campos">
-                    <label> Ação Social</label>
+                    <label> Ação Social(pts)</label>
                     <input type="number" id="acaoSocial" />
                 </div>
                 <div class="campos">
-                    <label> Homenagem</label>
+                    <label> Homenagem(pts)</label>
                     <input type="number" id="homenagem" />
+                </div>
+                <div class="campos">
+                    <label>Caixas de leite(litros)</label>
+                    <input type="number" id="leite"/>
+                </div>
+                <div class="campos">
+                    <label>Kit de alimentação(avulso)</label>
+                    <input type="number" id="kitAvulso"/>
+                </div>
+                <div class="campos">
+                    <label>Lata de suplemento(avulso)</label>
+                    <input type="number" id="suplementoAvulso"/>
+                </div>
+                <div class="campos">
+                    <label>Pacote de arroz 05 Kg(avulso)</label>
+                    <input type="number" id="pacote5kgAvulso"/>
+                </div>
+                <div class="campos">
+                    <label>Pacote de Arroz 01 Kg(avulso)</label>
+                    <input type="number" id="pacote1kgAvulso"/>
                 </div>
                 <div class="campos">    
                     <button type="button" onclick="calcular()">Calcular</button>
-                    <label id="resposta"></label>
+                    <label id="soma"></label>
                 </div>          
             </form>
         </div>
