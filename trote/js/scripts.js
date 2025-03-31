@@ -10,18 +10,37 @@ function calcular(){
     //recupera a qtde de litros de leite
     let leite= document.getElementById("leite").value
     soma = soma + (2 * Number(leite))
-    //recupera a qtde de kits avulsos
-    let kitAvulso= document.getElementById("kitAvulso").value
-    soma = soma + (30 * kitAvulso)
+    //recupera a qtde de kits
+    let kit= document.getElementById("kit").value
+    soma = soma + (30 * kit)
+    //recupera a cor da equipe
+    let equipe= document.getElementById("equipe").value
+    let pontosKit = 0 //guarda pontuação de kit 
+    if (equipe == "Laranja"){
+        //equipe é laranja
+        if (kit >= 97 )
+            pontosKit = 5000 + ((kit - 97) * 30)
+        }
+        else if (kit >= 78){
+            pontosKit = 4000 + ((kit - 79) * 30)
+        }
+        else if (kit >= 49){
+            pontosKit = 2500 + ((kit - 49) * 30)
+        }
+        else if (kit >= 19){
+            pontosKit = 1000 + ((kit - 19) * 30)
+    }
+    alert(pontosKit)
+    soma = soma + pontosKit
     //recupera a qtde de latas de suplemento
-    let suplementoAvulso= document.getElementById("suplementoAvulso").value
-    soma = soma + (15 * Number(suplementoAvulso))
+    let suplemento= document.getElementById("suplemento").value
+    soma = soma + (15 * Number(suplemento))
     //recupera a qtde de pacote de 5kg
-    let pacote5kgAvulso= document.getElementById("pacote5kgAvulso").value
-    soma= soma + (5 * Number(pacote5kgAvulso))
+    let pacote5kg= document.getElementById("pacote5kg").value
+    soma= soma + (5 * Number(pacote5kg))
     //recupera a qtde de pacote de 1kg
-    let pacote1kgAvulso= document.getElementById("pacote1kgAvulso").value
-    soma= soma + (1 * Number(pacote1kgAvulso))
+    let pacote1kg= document.getElementById("pacote1kg").value
+    soma= soma + (1 * Number(pacote1kg))
     //recupera a qtde de pacote de 400/500g
     let pacotedemacarrao= document.getElementById("pacotedemacarrao").value
     soma= soma + (0.5 * Number(pacotedemacarrao))
