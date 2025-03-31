@@ -22,6 +22,12 @@ function calcular(){
     //recupera a qtde de pacote de 1kg
     let pacote1kgAvulso= document.getElementById("pacote1kgAvulso").value
     soma= soma + (1 * Number(pacote1kgAvulso))
+    //recupera a qtde de pacote de 400/500g
+    let pacotedemacarrao= document.getElementById("pacotedemacarrao").value
+    soma= soma + (0.5 * Number(pacotedemacarrao))
+    //recupera a qtde de oleo
+    let oleo= document.getElementById("oleo").value
+    soma= soma + (1 * Number(oleo))
     //devolve o resultado para o HTML
     document.getElementById("soma").innerHTML=soma.toFixed(2)
 
